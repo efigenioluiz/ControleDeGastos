@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.control.ControllerJanelaVisualizarDia">
+    <TextField fx:id="tfDia" layoutX="481.0" layoutY="128.0" prefHeight="25.0" prefWidth="49.0" />
+   <TableView fx:id="tvDespesasCat" layoutX="14.0" layoutY="14.0" prefHeight="358.0" prefWidth="438.0">
+     <columns>
+       <TableColumn fx:id="tcNome" prefWidth="82.0" text="Nome" />
+       <TableColumn fx:id="tcValor" minWidth="4.0" prefWidth="83.0" text="Valor" />
+         <TableColumn fx:id="tcData" prefWidth="90.0" text="Data" />
+         <TableColumn fx:id="tcCategoria" prefWidth="94.0" text="Categoria" />
+         <TableColumn fx:id="tcSubcategoria" prefWidth="88.0" text="Subcategoria" />
+     </columns>
+   </TableView>
+   <Button layoutX="537.0" layoutY="128.0" mnemonicParsing="false" onAction="#ok" text="Ok" />
+</AnchorPane>

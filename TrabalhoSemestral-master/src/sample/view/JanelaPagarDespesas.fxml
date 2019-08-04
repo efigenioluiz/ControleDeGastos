@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="234.0" prefWidth="250.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.control.ControllerJanelaPagarDespesas">
+
+    <ComboBox fx:id="cbDespesa" layoutX="84.0" layoutY="45.0" prefWidth="150.0" />
+    <Button layoutX="254.0" layoutY="45.0" mnemonicParsing="false" onAction="#pagar" text="Pagar" />
+    <ImageView fitHeight="130.0" fitWidth="129.0" layoutX="74.0" layoutY="82.0" pickOnBounds="true" preserveRatio="true">
+        <image>
+            <Image url="sample/money.jpg" />
+        </image>
+    </ImageView>
+</AnchorPane>

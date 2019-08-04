@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="360.0" prefWidth="408.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.control.ControllerJanelaCadastraDespesas">
+   <children>
+      <DatePicker fx:id="tpData" layoutX="132.0" layoutY="178.0" promptText="Data" />
+      <TextField fx:id="tfNomeDespesa" layoutX="132.0" layoutY="70.0" promptText="Nome da Despesa" />
+      <Text layoutX="132.0" layoutY="66.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nome da Despesa: " />
+      <Text layoutX="132.0" layoutY="120.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Valor :" />
+      <TextField fx:id="tfValor" layoutX="132.0" layoutY="124.0" promptText="Valor" />
+      <Text layoutX="135.0" layoutY="174.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Data da Despesa:" />
+      <ComboBox onAction="#setSubCategoria" fx:id="cbCategoria" layoutX="132.0" layoutY="234.0" prefWidth="150.0" />
+      <Text layoutX="132.0" layoutY="230.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Categoria" />
+       <ImageView fitHeight="130.0" fitWidth="129.0" layoutY="42.0" pickOnBounds="true" preserveRatio="true">
+           <image>
+               <Image url="sample/money.jpg" />
+           </image>
+       </ImageView>
+       <Text layoutX="135.0" layoutY="290.0" text="Sub-Categoria" />
+      <ComboBox fx:id="cbSubcategoria" layoutX="132.0" layoutY="294.0" prefWidth="150.0" />
+   </children>
+</AnchorPane>

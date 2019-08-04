@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="234.0" prefWidth="250.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.control.ControllerJanelaCadastrarSubcategoria">
+    <children>
+        <Text layoutX="47.0" layoutY="75.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nome da SubCategoria" />
+        <TextField fx:id="tfNomeSubcategoria" layoutX="50.0" layoutY="86.0" prefHeight="25.0" prefWidth="136.0" promptText="Nome da SubCategoria" />
+        <ImageView fitHeight="130.0" fitWidth="129.0" layoutX="4.0" layoutY="126.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="sample/money.jpg" />
+            </image>
+        </ImageView>
+      <ComboBox fx:id="cbCategoria" layoutX="43.0" layoutY="27.0" prefWidth="150.0" />
+      <Text layoutX="35.0" layoutY="18.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Categoria:" />
+    </children>
+</AnchorPane>
